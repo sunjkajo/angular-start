@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://w.trhou.se/6l799nn93n -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Angular Basics - Final App</title>
+  <link href="https://polaroid-assets.teamtreehouse.com/assets/favicon-939a47ca5694acc36fd1e59225e43ce4.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://polaroid-assets.teamtreehouse.com/assets/apple-touch-icon-60x60-precomposed-34208bbbacabdbb8399c026a29e8d58a.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://polaroid-assets.teamtreehouse.com/assets/apple-touch-icon-76x76-precomposed-80697436e5364e1d7afc7d1abc393f89.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://polaroid-assets.teamtreehouse.com/assets/apple-touch-icon-120x120-precomposed-8ff7480bbd235f7362f5a2a57e17f82f.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://polaroid-assets.teamtreehouse.com/assets/apple-touch-icon-152x152-precomposed-1e316b811595756b46cf77728c6fa18f.png">
+
+  <link href="./checkbox-empty_files/application-0c20dc590da292e234ef37129f8ab54a.css" media="all" rel="stylesheet">
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="tKCflCUzxTVrOyCzpqD+mOwgkT0wqs/nc/et+BK2wtU=" name="csrf-token">
+<script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+<body><div class="code-viewer"><div class="titlebar"><div class="titlebar-item-left">
+  <h1 class="workspace-id">
+    <span class="workspace-title">
+      Angular Basics - Final App
+    </span>
+    <span class="workspace-owner">
+      by
+      <a href="http://teamtreehouse.com/hstn" class="workspace-owner--anchor">
+        <img src="./checkbox-empty_files/9e1e8c0a0dd9802c84c3c6bf4ba2f6cc" class="avatar">
+        hstn
+      </a>
+    </span>
+  </h1>
+</div>
+
+<div class="titlebar-item-center">
+  <a href="http://teamtreehouse.com/?utm_source=workspaces&amp;cid=3302" class="treehouse-cta" title="Learn to code with Treehouse">
+    <svg class="treehouse-cta--icon--logo" preserveAspectRatio="xMinYMin meet" viewBox="-2 -8 18 20">
+      <path d="M14-4.3c-0.6-0.4-1.7,0.2-2.3,1.3l-1.1,2c-0.5,0.8-0.4,1.8,0.1,2.6l0,0c0.5,0.8,1.2,1.5,1.5,1.7c0.1,0.1,0.2,0.3,0.3,0.5
+c0.2,0.7-0.2,1.4-0.9,1.6c-0.7,0.3-1.4-0.1-1.6-0.8c0-0.2-0.1-0.3,0-0.5C10,3.9,9.9,3.5,9.5,3C9.1,2.6,8.3,3.4,8,4.3l0,0
+c-0.1,0.4-0.3,1-0.3,1.4c0,0.5,0.1,0.8,0.1,0.9C7.9,7.3,7.6,8,7.1,8.3C6.3,8.7,5.4,8.4,5,7.7C4.7,7.2,4.8,6.5,5.2,6
+c0.1-0.1,0.7-0.8,0.9-1.2c0.1-0.4,0.3-0.9,0.3-0.9c0.2-0.8,0.2-1,0-1.2c-0.1-0.1-0.3-0.3-0.6,0c-0.2,0-0.5,0.2-1,0.7
+C4.5,3.7,4.6,4.1,4,4.6C3.4,5,2.7,4.9,2.2,4.4C1.8,3.8,1.8,3,2.4,2.6s0.9-0.2,1.4-0.5c0.6-0.4,1.1-0.6,1.5-0.9
+c0.3-0.2,0.5-0.6,0.4-0.7C5.6,0.2,5.4,0.2,5.2,0.3C4.6,0.3,4,0.6,3.7,0.8C3.2,1.1,2.5,1,2.1,0.5S1.9-0.7,2.4-1.1
+c0.2-0.2,0.5-0.2,0.7-0.2c0.4,0,1.5,0.2,2.4,0.1h0.2c0.9-0.2,2-1,2.4-1.8c0,0,0.4-0.7,0.9-1.7c0.6-0.9,0.6-1.9,0-2.4l-1-0.6
+c-0.5-0.3-1.4-0.3-1.9,0L-1-3.7c-0.6,0.4-1,1.1-1,1.7v8c0,0.6,0.4,1.3,0.9,1.6L6,11.8c0.5,0.3,1.4,0.3,1.9,0l7.1-4.1
+C15.6,7.4,16,6.7,16,6v-8c0-0.6-0.4-1.3-0.9-1.6C15.2-3.6,14.6-3.9,14-4.3z"></path>
+    </svg>
+    <span class="treehouse-cta--anchor">Learn to code with Treehouse</span>
+  </a>
+</div>
+
+<ul class="titlebar-item-right util-actions">
+    <!-- Fork -->
+    <li class="util-action-item">
+      <a class="util-action-item-anchor util-action-fork" title="Fork Snapshot" href="https://teamtreehouse.com/workspaces/6l799nn93n/fork" target="_blank">
+        Fork Snapshot
+        <svg class="icon-fork" preserveAspectRatio="xMinYMin meet" viewBox="0 0 13 14">
+<path d="M12.7,7.3c-0.4-0.4-1-0.4-1.4,0L10,8.6V8.3c0-3.4-2.8-6.1-6.1-6.1H3V0H1v10.3c-0.6,0.3-1,1-1,1.7
+c0,1.1,0.9,2,2,2s2-0.9,2-2c0-0.7-0.4-1.4-1-1.7V4.1h0.9C6.1,4.1,8,6,8,8.3v0.3L6.7,7.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l3,3
+C8.5,11.9,8.7,12,9,12s0.5-0.1,0.7-0.3l3-3C13.1,8.3,13.1,7.7,12.7,7.3z"></path>
+</svg>
+      </a>
+    </li>
+</ul>
+
+
+</div><div class="snapshot"><div class="code"><div class="filetree"><div class="tree-view"><ul class="filetree-container root"><li class="filetree-item directory expanded"><a class="name"><div class="directory-icons"><svg class="icon-arrow" preserveAspectRatio="xMinYMin meet" viewBox="-2 9 4 6">
+  <path d="M1.7,11.5l-2.7-2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0.1C-1.9,9.5-2,9.7-2,10v4c0,0.3,0.1,0.5,0.4,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l2.7-2C1.9,12.4,2,12.2,2,12S1.9,11.6,1.7,11.5z"></path>
+</svg>
+
+<svg class="icon-folder" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 10">
+  <path d="M11,2H7c0,0,0,0,0,0L5,0H1C0.4,0,0,0.4,0,1v2v4v2c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3C12,2.5,11.6,2,11,2z"></path>
+</svg>
+</div>Angular Basics - Final App
+</a><ul class="filetree-container"><li class="filetree-item directory"><a class="name"><div class="directory-icons"><svg class="icon-arrow" preserveAspectRatio="xMinYMin meet" viewBox="-2 9 4 6">
+  <path d="M1.7,11.5l-2.7-2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0.1C-1.9,9.5-2,9.7-2,10v4c0,0.3,0.1,0.5,0.4,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l2.7-2C1.9,12.4,2,12.2,2,12S1.9,11.6,1.7,11.5z"></path>
+</svg>
+
+<svg class="icon-folder" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 10">
+  <path d="M11,2H7c0,0,0,0,0,0L5,0H1C0.4,0,0,0.4,0,1v2v4v2c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3C12,2.5,11.6,2,11,2z"></path>
+</svg>
+</div>mock
+</a><ul class="filetree-container"></ul>
+</li><li class="filetree-item directory"><a class="name"><div class="directory-icons"><svg class="icon-arrow" preserveAspectRatio="xMinYMin meet" viewBox="-2 9 4 6">
+  <path d="M1.7,11.5l-2.7-2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0.1C-1.9,9.5-2,9.7-2,10v4c0,0.3,0.1,0.5,0.4,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l2.7-2C1.9,12.4,2,12.2,2,12S1.9,11.6,1.7,11.5z"></path>
+</svg>
+
+<svg class="icon-folder" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 10">
+  <path d="M11,2H7c0,0,0,0,0,0L5,0H1C0.4,0,0,0.4,0,1v2v4v2c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3C12,2.5,11.6,2,11,2z"></path>
+</svg>
+</div>scripts
+</a><ul class="filetree-container"></ul>
+</li><li class="filetree-item directory expanded"><a class="name"><div class="directory-icons"><svg class="icon-arrow" preserveAspectRatio="xMinYMin meet" viewBox="-2 9 4 6">
+  <path d="M1.7,11.5l-2.7-2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0.1C-1.9,9.5-2,9.7-2,10v4c0,0.3,0.1,0.5,0.4,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l2.7-2C1.9,12.4,2,12.2,2,12S1.9,11.6,1.7,11.5z"></path>
+</svg>
+
+<svg class="icon-folder" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 10">
+  <path d="M11,2H7c0,0,0,0,0,0L5,0H1C0.4,0,0,0.4,0,1v2v4v2c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3C12,2.5,11.6,2,11,2z"></path>
+</svg>
+</div>styles
+</a><ul class="filetree-container"><li class="filetree-item active"><a class="name">checkbox-empty.svg
+</a></li><li class="filetree-item"><a class="name">checkbox-filled.svg
+</a></li><li class="filetree-item"><a class="name">main.css
+</a></li></ul>
+</li><li class="filetree-item directory"><a class="name"><div class="directory-icons"><svg class="icon-arrow" preserveAspectRatio="xMinYMin meet" viewBox="-2 9 4 6">
+  <path d="M1.7,11.5l-2.7-2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0.1C-1.9,9.5-2,9.7-2,10v4c0,0.3,0.1,0.5,0.4,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l2.7-2C1.9,12.4,2,12.2,2,12S1.9,11.6,1.7,11.5z"></path>
+</svg>
+
+<svg class="icon-folder" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 10">
+  <path d="M11,2H7c0,0,0,0,0,0L5,0H1C0.4,0,0,0.4,0,1v2v4v2c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3C12,2.5,11.6,2,11,2z"></path>
+</svg>
+</div>templates
+</a><ul class="filetree-container"></ul>
+</li><li class="filetree-item directory"><a class="name"><div class="directory-icons"><svg class="icon-arrow" preserveAspectRatio="xMinYMin meet" viewBox="-2 9 4 6">
+  <path d="M1.7,11.5l-2.7-2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0.1C-1.9,9.5-2,9.7-2,10v4c0,0.3,0.1,0.5,0.4,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l2.7-2C1.9,12.4,2,12.2,2,12S1.9,11.6,1.7,11.5z"></path>
+</svg>
+
+<svg class="icon-folder" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 10">
+  <path d="M11,2H7c0,0,0,0,0,0L5,0H1C0.4,0,0,0.4,0,1v2v4v2c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3C12,2.5,11.6,2,11,2z"></path>
+</svg>
+</div>vendor
+</a><ul class="filetree-container"></ul>
+</li><li class="filetree-item"><a class="name">index.html
+</a></li></ul>
+</li></ul>
+</div></div>
+<div class="vert-resizer"></div>
+<div class="editor"><ul class="tab-container"><li class="tab-item active"><span class="tab-item-name">
+  checkbox-empty.svg
+</span>
+<a class="close" title="Close">
+  <svg class="icon-close" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12">
+  <path d="M7.8,6l3.9-3.9c0.4-0.4,0.4-1.1,0-1.5l-0.3-0.3c-0.4-0.4-1.1-0.4-1.5,0L6,4.2L2.1,0.3C1.7-0.1,1-0.1,0.6,0.3
+    L0.3,0.6c-0.4,0.4-0.4,1.1,0,1.5L4.2,6L0.3,9.9c-0.4,0.4-0.4,1.1,0,1.5l0.3,0.3c0.4,0.4,1.1,0.4,1.5,0L6,7.8l3.9,3.9
+    c0.4,0.4,1.1,0.4,1.5,0l0.3-0.3c0.4-0.4,0.4-1.1,0-1.5L7.8,6z"></path>
+  </svg>
+</a>
+</li></ul><div class="editor-code"><div class="editor-code-syntax">
+  <h2 class="editor-code--empty-state">Click a file on the left to open it</h2>
+<div class="CodeMirror cm-s-polaroid CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 35px;"><textarea autocorrect="off" autocapitalize="off" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 31px;"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div style="position: relative; min-height: 100%;"><div class="CodeMirror-sizer" style="margin-left: 31px; min-height: 116px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>P</span><span>D</span><span>9</span><span>4</span><span>b</span><span>W</span><span>w</span><span>g</span><span>d</span><span>m</span><span>V</span><span>y</span><span>c</span><span>2</span><span>l</span><span>v</span><span>b</span><span>j</span><span>0</span><span>i</span><span>M</span><span>S</span><span>4</span><span>w</span><span>I</span><span>i</span><span>B</span><span>l</span><span>b</span><span>m</span><span>N</span><span>v</span><span>Z</span><span>G</span><span>l</span><span>u</span><span>Z</span><span>z</span><span>0</span><span>i</span><span>d</span><span>X</span><span>R</span><span>m</span><span>L</span><span>T</span><span>g</span><span>i</span><span>P</span><span>z</span><span>4</span><span>K</span><span>P</span><span>C</span><span>E</span><span>t</span><span>L</span><span>S</span><span>B</span><span>H</span><span>Z</span><span>W</span><span>5</span><span>l</span><span>c</span><span>m</span><span>F</span><span>0</span><span>b</span><span>3</span><span>I</span><span>6</span><span>I</span><span>E</span><span>F</span><span>k</span><span>b</span><span>2</span><span>J</span><span>l</span><span>I</span><span>E</span><span>l</span><span>s</span><span>b</span><span>H</span><span>V</span><span>z</span><span>d</span><span>H</span><span>J</span><span>h</span><span>d</span><span>G</span><span>9</span><span>y</span><span>I</span><span>D</span><span>E</span><span>5</span><span>L</span><span>j</span><span>E</span><span>u</span><span>M</span><span>C</span><span>w</span><span>g</span><span>U</span><span>1</span><span>Z</span><span>H</span><span>I</span><span>E</span><span>V</span><span>4</span><span>c</span><span>G</span><span>9</span><span>y</span><span>d</span><span>C</span><span>B</span><span>Q</span><span>b</span><span>H</span><span>V</span><span>n</span><span>L</span><span>U</span><span>l</span><span>u</span><span>I</span><span>C</span><span>4</span><span>g</span><span>U</span><span>1</span><span>Z</span><span>H</span><span>I</span><span>F</span><span>Z</span><span>l</span><span>c</span><span>n</span><span>N</span><span>p</span><span>b</span><span>2</span><span>4</span><span>6</span><span>I</span><span>D</span><span>Y</span><span>u</span><span>M</span><span>D</span><span>A</span><span>g</span><span>Q</span><span>n</span><span>V</span><span>p</span><span>b</span><span>G</span><span>Q</span><span>g</span><span>M</span><span>C</span><span>k</span><span>g</span><span>I</span><span>C</span><span>0</span><span>t</span><span>P</span><span>g</span><span>o</span><span>8</span><span>c</span><span>3</span><span>Z</span><span>n</span><span>I</span><span>H</span><span>Z</span><span>l</span><span>c</span><span>n</span><span>N</span><span>p</span><span>b</span><span>2</span><span>4</span><span>9</span><span>I</span><span>j</span><span>E</span><span>u</span><span>M</span><span>S</span><span>I</span><span>g</span><span>a</span><span>W</span><span>Q</span><span>9</span><span>I</span><span>k</span><span>x</span><span>h</span><span>e</span><span>W</span><span>V</span><span>y</span><span>X</span><span>z</span><span>E</span><span>i</span><span>I</span><span>H</span><span>h</span><span>t</span><span>b</span><span>G</span><span>5</span><span>z</span><span>P</span><span>S</span><span>J</span><span>o</span><span>d</span><span>H</span><span>R</span><span>w</span><span>O</span><span>i</span><span>8</span><span>v</span><span>d</span><span>3</span><span>d</span><span>3</span><span>L</span><span>n</span><span>c</span><span>z</span><span>L</span><span>m</span><span>9</span><span>y</span><span>Z</span><span>y</span><span>8</span><span>y</span><span>M</span><span>D</span><span>A</span><span>w</span><span>L</span><span>3</span><span>N</span><span>2</span><span>Z</span><span>y</span><span>I</span><span>g</span><span>e</span><span>G</span><span>1</span><span>s</span><span>b</span><span>n</span><span>M</span><span>6</span><span>e</span><span>G</span><span>x</span><span>p</span><span>b</span><span>m</span><span>s</span><span>9</span><span>I</span><span>m</span><span>h</span><span>0</span><span>d</span><span>H</span><span>A</span><span>6</span><span>L</span><span>y</span><span>9</span><span>3</span><span>d</span><span>3</span><span>c</span><span>u</span><span>d</span><span>z</span><span>M</span><span>u</span><span>b</span><span>3</span><span>J</span><span>n</span><span>L</span><span>z</span><span>E</span><span>5</span><span>O</span><span>T</span><span>k</span><span>v</span><span>e</span><span>G</span><span>x</span><span>p</span><span>b</span><span>m</span><span>s</span><span>i</span><span>I</span><span>H</span><span>g</span><span>9</span><span>I</span><span>j</span><span>B</span><span>w</span><span>e</span><span>C</span><span>I</span><span>g</span><span>e</span><span>T</span><span>0</span><span>i</span><span>M</span><span>H</span><span>B</span><span>4</span><span>I</span><span>g</span><span>o</span><span>J</span><span>I</span><span>H</span><span>Z</span><span>p</span><span>Z</span><span>X</span><span>d</span><span>C</span><span>b</span><span>3</span><span>g</span><span>9</span><span>I</span><span>j</span><span>A</span><span>g</span><span>M</span><span>C</span><span>A</span><span>x</span><span>O</span><span>S</span><span>A</span><span>x</span><span>O</span><span>S</span><span>I</span><span>g</span><span>c</span><span>3</span><span>R</span><span>5</span><span>b</span><span>G</span><span>U</span><span>9</span><span>I</span><span>m</span><span>V</span><span>u</span><span>Y</span><span>W</span><span>J</span><span>s</span><span>Z</span><span>S</span><span>1</span><span>i</span><span>Y</span><span>W</span><span>N</span><span>r</span><span>Z</span><span>3</span><span>J</span><span>v</span><span>d</span><span>W</span><span>5</span><span>k</span><span>O</span><span>m</span><span>5</span><span>l</span><span>d</span><span>y</span><span>A</span><span>w</span><span>I</span><span>D</span><span>A</span><span>g</span><span>M</span><span>T</span><span>k</span><span>g</span><span>M</span><span>T</span><span>k</span><span>7</span><span>I</span><span>i</span><span>B</span><span>4</span><span>b</span><span>W</span><span>w</span><span>6</span><span>c</span><span>3</span><span>B</span><span>h</span><span>Y</span><span>2</span><span>U</span><span>9</span><span>I</span><span>n</span><span>B</span><span>y</span><span>Z</span><span>X</span><span>N</span><span>l</span><span>c</span><span>n</span><span>Z</span><span>l</span><span>I</span><span>j</span><span>4</span><span>K</span><span>P</span><span>H</span><span>N</span><span>0</span><span>e</span><span>W</span><span>x</span><span>l</span><span>I</span><span>H</span><span>R</span><span>5</span><span>c</span><span>G</span><span>U</span><span>9</span><span>I</span><span>n</span><span>R</span><span>l</span><span>e</span><span>H</span><span>Q</span><span>v</span><span>Y</span><span>3</span><span>N</span><span>z</span><span>I</span><span>j</span><span>4</span><span>K</span><span>C</span><span>S</span><span>5</span><span>z</span><span>d</span><span>D</span><span>B</span><span>7</span><span>Z</span><span>m</span><span>l</span><span>s</span><span>b</span><span>D</span><span>o</span><span>j</span><span>Q</span><span>T</span><span>d</span><span>C</span><span>O</span><span>U</span><span>M</span><span>0</span><span>O</span><span>3</span><span>0</span><span>K</span><span>P</span><span>C</span><span>9</span><span>z</span><span>d</span><span>H</span><span>l</span><span>s</span><span>Z</span><span>T</span><span>4</span><span>K</span><span>P</span><span>H</span><span>B</span><span>h</span><span>d</span><span>G</span><span>g</span><span>g</span><span>Y</span><span>2</span><span>x</span><span>h</span><span>c</span><span>3</span><span>M</span><span>9</span><span>I</span><span>n</span><span>N</span><span>0</span><span>M</span><span>C</span><span>I</span><span>g</span><span>Z</span><span>D</span><span>0</span><span>i</span><span>T</span><span>T</span><span>E</span><span>3</span><span>L</span><span>D</span><span>J</span><span>2</span><span>M</span><span>T</span><span>V</span><span>I</span><span>M</span><span>l</span><span>Y</span><span>y</span><span>S</span><span>D</span><span>E</span><span>3</span><span>I</span><span>E</span><span>0</span><span>x</span><span>N</span><span>y</span><span>w</span><span>w</span><span>S</span><span>D</span><span>J</span><span>D</span><span>M</span><span>C</span><span>4</span><span>5</span><span>L</span><span>D</span><span>A</span><span>s</span><span>M</span><span>C</span><span>w</span><span>w</span><span>L</span><span>j</span><span>k</span><span>s</span><span>M</span><span>C</span><span>w</span><span>y</span><span>d</span><span>j</span><span>E</span><span>1</span><span>Y</span><span>z</span><span>A</span><span>s</span><span>M</span><span>S</span><span>4</span><span>x</span><span>L</span><span>D</span><span>A</span><span>u</span><span>O</span><span>S</span><span>w</span><span>y</span><span>L</span><span>D</span><span>I</span><span>s</span><span>M</span><span>m</span><span>g</span><span>x</span><span>N</span><span>W</span><span>M</span><span>x</span><span>L</span><span>j</span><span>E</span><span>s</span><span>M</span><span>C</span><span>w</span><span>y</span><span>L</span><span>T</span><span>A</span><span>u</span><span>O</span><span>S</span><span>w</span><span>y</span><span>L</span><span>T</span><span>J</span><span>W</span><span>M</span><span>k</span><span>M</span><span>x</span><span>O</span><span>S</span><span>w</span><span>w</span><span>L</span><span>j</span><span>k</span><span>s</span><span>M</span><span>T</span><span>g</span><span>u</span><span>M</span><span>S</span><span>w</span><span>w</span><span>L</span><span>D</span><span>E</span><span>3</span><span>L</span><span>D</span><span>B</span><span>M</span><span>M</span><span>T</span><span>c</span><span>s</span><span>M</span><span>H</span><span>o</span><span>i</span><span>L</span><span>z</span><span>4</span><span>K</span><span>P</span><span>C</span><span>9</span><span>z</span><span>d</span><span>m</span><span>c</span><span>+</span><span>C</span><span>g</span><span>=</span><span>=</span></pre></div><div style="position: relative; z-index: 1; display: none;"></div><div><div style="position: relative;"><div style="position: absolute; left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOSAxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTkgMTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojQTdCOUM0O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE3LDJ2MTVIMlYySDE3IE0xNywwSDJDMC45LDAsMCwwLjksMCwydjE1YzAsMS4xLDAuOSwyLDIsMmgxNWMxLjEsMCwyLTAuOSwyLTJWMkMxOSwwLjksMTguMSwwLDE3LDBMMTcsMHoiLz4KPC9zdmc+Cg==</pre></div></div><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 116px;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div></div></div></div></div></div>
+<div class="editor-code-footer"><div class="editor-code-footer-info">
+  <span class="editor-code-info-cursor">Line 1, Column 1</span>
+  <span class="editor-code-info-lines">— 1 Lines</span>
+</div>
+<div class="editor-code-footer-meta">
+  <span class="editor-code-meta-file">XML</span>
+</div>
+</div></div></div>
+</div></div></div></body></html>
